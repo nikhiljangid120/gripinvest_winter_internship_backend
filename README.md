@@ -1,16 +1,24 @@
-# Grip Invest Mini Investment Platform - Backend
+# GripInvest Backend
 
-A RESTful backend for a mini investment platform. Built with Node.js, Express, MySQL. Supports user auth, product CRUD, investments, and transaction logging. AI integrations mocked for password feedback, descriptions, recommendations, and insights.
+## Overview
+A mini investment platform using Node.js, Express, and MySQL with Indian context.
 
-## Tech Stack
-- **Runtime**: Node.js v18+
-- **Framework**: Express.js
-- **Database**: MySQL (schemas in `schema.sql`)
-- **Auth**: JWT + bcrypt
-- **Validation**: Joi
-- **Testing**: Jest (75%+ coverage)
-- **Other**: UUID, CORS, dotenv
+## Setup
+1. Clone repo: `git clone https://github.com/yourusername/gripinvest_winter_internship_backend.git`
+2. Install dependencies: `npm install`
+3. Create `.env` with DB and JWT settings (see `.env.example`).
+4. Start XAMPP MySQL, import `schema.sql` into `grip_invest` DB.
+5. Run: `node src/app.js`
 
-## Setup Instructions
-1. **Prerequisites**: Node.js, MySQL, Docker (for DevOps part—see below).
-2. **Clone & Install**:
+## API Endpoints
+- `POST /auth/signup`: Create user (201)
+- `POST /auth/login`: Get token (200)
+- `GET /products`: List products (200)
+- `POST /investments`: Invest (201)
+- `GET /investments/portfolio`: View portfolio (200)
+
+## AI Integration
+Used Grok AI to debug and optimize code, enhancing reliability.
+
+## Testing
+Manual testing via Postman; Jest coverage at 56.67% (work in progress).
