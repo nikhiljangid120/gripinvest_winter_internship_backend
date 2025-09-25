@@ -7,7 +7,7 @@ A mini investment platform using Node.js, Express, and MySQL with Indian context
 1. Clone repo: `git clone https://github.com/yourusername/gripinvest_winter_internship_backend.git`
 2. Install dependencies: `npm install`
 3. Create `.env` with DB and JWT settings (see `.env.example`).
-4. Start XAMPP MySQL, import `schema.sql` into `grip_invest` DB.
+4. Start XAMPP MySQL, import `schema.sql` into `grip_invest` DB. 
 5. Run: `node src/app.js`
 
 ## API Endpoints
